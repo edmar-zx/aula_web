@@ -1,0 +1,247 @@
+*{
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#logo{
+    width: 5%;
+}
+header, #navbar{
+    display: flex;
+}
+header{
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 0;
+    /* border: solid 1px #000; */
+    
+}
+li{
+    list-style: none;
+}
+
+.navbar-item{
+    margin: 5px 20px;
+    padding: 5px 20px;
+}  
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+#banner{
+    background-image: url('/assets/images/banner2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 85vh;
+    border: solid 1px #000;
+    display: flex;
+    align-items: center;
+}
+#banner-text{
+    margin-left: 15%;
+    width: 20%;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 2rem;
+    
+}
+
+#banner h1{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#banner h1,
+#banner h1 span{
+    font-size: 2.5rem;
+}
+
+#banner h1 span{
+    display: block;
+}
+
+#banner-text p{
+    color: #fff;
+    font-size: 1rem;
+    margin-top: 0;
+}
+
+#banner-text a{
+    background-color: #ffaf40;
+    padding: 10px 50px;
+    color: #eee;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#cards{
+    text-align: center;
+}
+#cards h1{
+    font-size: 1rem;
+}
+
+
+#banner-img{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#banner-img div img{
+    width: 100%;
+}
+
+#banner-img p{
+    color: #718093;
+}
+
+#espelho{
+  width: 100%;
+  
+}
+#espelho-2{
+    display: flex;
+}
+
+#espelho-2 div{
+    margin-top: 5%;
+}
+
+#espelho-2 img, #espelho-2 div{ 
+      width: 50%;
+}
+
+
+#espelho div div{
+    margin-left: 15%;
+    width: 30%;
+}
+
+#espelho-2 div a{
+    color: #fff;
+    background-color: #ffaf40;
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+
+#espelho h1{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#espelho-2 div p{
+    margin-bottom: 30px;
+}
+
+#espelho-2 div {
+    padding: 15px 80px;
+}
+
+
+#final{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#final div{
+    width: 33%;
+    padding: 10px 30px;
+}
+
+.classe h1{
+    display: inline-block;
+}
+
+.classe{
+    text-align: center;
+}
+
+#medicos{
+    width: 100%;
+    background-color: #1db5c9;
+    text-align: center;
+}
+
+#foto-doutores {
+    width: 70%;
+    display: flex;
+    gap: 10px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.doctor img{
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+
+}
+
+.doctor{
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.doctor div h1{
+    color: #1db5c9;
+}
+
+.doctor div span{
+    color: #676f70;
+}
+
+#sobre div{
+    width: 25%;     
+}
+
+#sobre img{
+    width: 20%;
+}
+
+#sobre{
+    border: solid 1px #000; 
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 10px 10%;
+}
+
+#menu h1{
+    border-bottom: 2px solid #1db5c9;
+}
+
+#menu ul{
+    text-align: left;
+    padding: 0%;
+}
+#menu ul li{
+    margin-top: 25px;
+}
+
+#contato p{
+    background-color: #1db5c9;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+}
+#contato h1{
+    border-bottom: 3px solid #1db5c9;
+}
+div#contato{
+    width: 18%;
+    margin-right: 10px;
+}
