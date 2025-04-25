@@ -11,10 +11,20 @@ body{
 #logo{
     width: 5%;
 }
+main{
+    margin-top: 80px    ;
+}
+
 header, #navbar{
     display: flex;
 }
 header{
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: #fff;
+    transition: top 0.3s ease;
+
     width: 100%;
     justify-content: space-between;
     flex-direction: row;
@@ -96,11 +106,35 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
+    scroll-behavior: smooth;
+
+}
+
+.card{
+    flex: 0 0 580px;
+    scroll-snap-align: start;
+}
+
+.carousel-buttons{
+    margin: 20px 0;
+    text-align: center;
+}
+
+.carousel-buttons button{
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin: 0 10px;
+    border-radius: 5px;
 
 }
 
 #banner-img div img{
-    width: 100%;
+    width: 98%;
+    border-radius: 10px;
 }
 
 #banner-img p{
@@ -213,7 +247,6 @@ a{
 }
 
 #sobre{
-    border: solid 1px #000; 
     display: flex;
     gap: 20px;
     justify-content: space-between;
@@ -245,4 +278,51 @@ a{
 div#contato{
     width: 18%;
     margin-right: 10px;
+}
+
+.menu-btn{
+    display: none;
+    background: none;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    color: #333;
+}
+
+@media only screen and (max-width: 768px){
+  
+}
+
+@media only screen and (max-width: 600px){
+  .menu-btn{
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1100;
+  }
+  nav{
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    background-color: #fff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    padding: 60px;
+    transition: left 0.3s ease;
+  }
+  nav.active{
+    left: 0;
+  }
+  #navbar{
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+  }
+  .navbar-item{
+    padding: 15px 20px;
+    display: block;
+    color: #333;
+  }
 }
