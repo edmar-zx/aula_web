@@ -30,8 +30,6 @@ header{
     flex-direction: row;
     align-items: center;
     padding: 10px 0;
-    /* border: solid 1px #000; */
-    
 }
 li{
     list-style: none;
@@ -52,7 +50,6 @@ a{
     background-size: cover;
     background-repeat: no-repeat;
     height: 85vh;
-    border: solid 1px #000;
     display: flex;
     align-items: center;
 }
@@ -63,7 +60,6 @@ a{
     border-radius: 10px;
     padding: 2rem;
     color: #fff;
-    
 }
 
 #banner h1{
@@ -101,14 +97,12 @@ a{
     font-size: 1rem;
 }
 
-
 #banner-img{
     display: flex;
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
     scroll-behavior: smooth;
-
 }
 
 .card{
@@ -129,7 +123,6 @@ a{
     cursor: pointer;
     margin: 0 10px;
     border-radius: 5px;
-
 }
 
 #banner-img div img{
@@ -143,27 +136,25 @@ a{
 
 #espelho{
   width: 100%;
-  
 }
-#espelho-2{
+.espelho-2{
     display: flex;
 }
 
-#espelho-2 div{
+.espelho-2 div{
     margin-top: 5%;
 }
 
-#espelho-2 img, #espelho-2 div{ 
+.espelho-2 img, .espelho-2 div{ 
       width: 50%;
 }
-
 
 #espelho div div{
     margin-left: 15%;
     width: 30%;
 }
 
-#espelho-2 div a{
+.espelho-2 div a{
     color: #fff;
     background-color: #ffaf40;
     padding: 15px 30px;
@@ -175,14 +166,13 @@ a{
     font-size: 1.5rem;
 }
 
-#espelho-2 div p{
+.espelho-2 div p{
     margin-bottom: 30px;
 }
 
-#espelho-2 div {
+.espelho-2 div {
     padding: 15px 80px;
 }
-
 
 #final{
     width: 100%;
@@ -215,14 +205,11 @@ a{
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
-
-
 }
 
 .doctor img{
     width: 100%;
     border-radius: 20px 20px 0px 0px;
-
 }
 
 .doctor{
@@ -289,40 +276,92 @@ div#contato{
     color: #333;
 }
 
-@media only screen and (max-width: 768px){
-  
+@media only screen and (max-width: 980px){
+    .menu-btn{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1100;
+      }
+      nav{
+        position: fixed;
+        top: 0;
+        left: -250px;
+        width: 250px;
+        background-color: #fff;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        padding: 60px;
+        transition: left 0.3s ease;
+      }
+      nav.active{
+        left: 0;
+      }
+      #navbar{
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        gap: 10px;
+      }
+      .navbar-item{
+        padding: 15px 20px;
+        display: block;
+        color: #333;
+      }
+      
+    #banner{
+        align-items: baseline;
+    }
+    #banner-text{
+        width: 70%;
+        margin-top: 5%;
+    }
+    .espelho-2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .espelho-2 img{
+        width: 80%;
+    }
+    #espelho div div{
+        margin-left: 0%;
+        width: 100%;
+        margin-top: 0%;
+    }
+    .espelho-2 div{
+        text-align: center;
+    }
+
+    .espelho-2 div p{
+        text-align: justify ;
+    }
+    .reflexo{
+        flex-direction: column-reverse;
+    }
+    #sobre{
+        display: block;
+    }
+    #sobre div{
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 600px){
-  .menu-btn{
-    display: block;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: 1100;
-  }
-  nav{
-    position: fixed;
-    top: 0;
-    left: -250px;
-    width: 250px;
-    background-color: #fff;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    padding: 60px;
-    transition: left 0.3s ease;
-  }
-  nav.active{
-    left: 0;
-  }
-  #navbar{
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-    gap: 10px;
-  }
-  .navbar-item{
-    padding: 15px 20px;
-    display: block;
-    color: #333;
-  }
+    #banner-text{
+        width: 70%;
+        margin-top: 70%;
+    }
+    .reflexo{
+        flex-direction: column-reverse;
+    }
+    #final{
+        display: block;
+    }
+    #final div{
+        width: 100%;
+    }
+    #final div p{
+        text-align: justify;
+    }
 }
